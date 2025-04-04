@@ -1,7 +1,10 @@
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale, } from 'next-intl';
-
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
 import { routing } from '@/i18n/routing';
+import theme from '@/assets/theme';
+import AppHeader from '@/components/header';
 
 export const metadata = {
   title: 'Vishal Patil',
@@ -22,8 +25,16 @@ export default async function LocaleLayout({
   }
   return (
     <html lang={locale}>
-      <body>
-        <NextIntlClientProvider locale={locale}>{children}</NextIntlClientProvider>
+      <body style={{ margin: 0 }}>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <NextIntlClientProvider locale={locale}>
+              <AppHeader />
+              {children}
+
+            </NextIntlClientProvider>
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
