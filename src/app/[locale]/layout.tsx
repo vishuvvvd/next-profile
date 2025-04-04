@@ -1,10 +1,11 @@
+import { ThemeProvider } from '@mui/material/styles';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale, } from 'next-intl';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { ThemeProvider } from '@mui/material/styles';
-import { routing } from '@/i18n/routing';
+
 import theme from '@/assets/theme';
 import AppHeader from '@/components/header';
+import { routing } from '@/i18n/routing';
 
 export const metadata = {
   title: 'Vishal Patil',

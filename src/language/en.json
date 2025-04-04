@@ -1,0 +1,13 @@
+{
+    "HOMEPAGE": {
+        "TITLE": "Hello world!",
+        "ABOUT": "Go to the about page"
+    },
+    "HEADER": {
+        "ME": "Me",
+        "ABOUT": "About",
+        "EDUCATION": "Education",
+        "EXPERIANCE": "Experiance",
+        "CONTACT": "Contact"
+    }
+}
