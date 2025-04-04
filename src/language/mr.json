@@ -1,0 +1,13 @@
+{
+    "HOMEPAGE": {
+        "title": "नमस्कार जग!",
+        "about": "परिचय पृष्ठावर जा"
+    },
+    "HEADER": {
+        "ME": "मी",
+        "ABOUT": "परिचय",
+        "EDUCATION": "शिक्षण",
+        "EXPERIANCE": "अनुभव",
+        "CONTACT": "संपर्क करा"
+    }
+}

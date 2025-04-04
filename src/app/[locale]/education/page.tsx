@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/navigation';
 
-export default function HomePage() {
+export default function EducationPage() {
   const t = useTranslations('HOMEPAGE');
   return (
     <div>
