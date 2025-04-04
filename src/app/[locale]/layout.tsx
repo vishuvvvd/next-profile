@@ -1,6 +1,12 @@
-import { NextIntlClientProvider, hasLocale, } from 'next-intl';
 import { notFound } from 'next/navigation';
+import { NextIntlClientProvider, hasLocale, } from 'next-intl';
+
 import { routing } from '@/i18n/routing';
+
+export const metadata = {
+  title: 'Vishal Patil',
+  description: 'Developer'
+};
 
 export default async function LocaleLayout({
   children,
