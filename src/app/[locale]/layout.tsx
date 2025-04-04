@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale, } from 'next-intl';
 
 import theme from '@/assets/theme';
+import AppFooter from '@/components/footer';
 import AppHeader from '@/components/header';
 import { routing } from '@/i18n/routing';
 
@@ -32,7 +33,7 @@ export default async function LocaleLayout({
             <NextIntlClientProvider locale={locale}>
               <AppHeader />
               {children}
-
+              <AppFooter />
             </NextIntlClientProvider>
           </ThemeProvider>
         </AppRouterCacheProvider>

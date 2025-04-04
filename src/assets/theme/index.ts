@@ -1,13 +1,15 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
 
+import { primaryMain, secondaryMain } from '../colors';
+
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // Example primary color
+      main: primaryMain,
     },
     secondary: {
-      main: '#dc004e', // Example secondary color
+      main: secondaryMain,
     },
   },
   typography: {
