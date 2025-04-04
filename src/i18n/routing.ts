@@ -1,4 +1,5 @@
-import { defaultLocale, localePrefix, locales } from "@/constants/language";
-import { defineRouting } from "next-intl/routing";
+import { defineRouting } from 'next-intl/routing';
+
+import { defaultLocale, localePrefix, locales } from '@/constants/language';
 
 export const routing = defineRouting({ locales, localePrefix, defaultLocale });
