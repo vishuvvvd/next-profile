@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   assetPrefix: process.env.ASSET_PRIFIX,
   basePath: process.env.BASE_PATH,
   reactStrictMode: true,
-  swcMinify: true,
   env: {},
 };
 
