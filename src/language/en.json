@@ -9,5 +9,10 @@
         "EDUCATION": "Education",
         "EXPERIANCE": "Experiance",
         "CONTACT": "Contact"
+    },
+    "FOOTER": {
+        "WITH": "with",
+        "HEART": "❤",
+        "NOTE": "Wanna discuss something? Feel free to ping me!"
     }
 }
