@@ -16,75 +16,75 @@ import { appRoutes } from '@/constants/app-router';
 import { CONTACT_EMAIL, CONTACT_NUMBER } from '.';
 
 export const socialMediaList = [
-    {
-        name: 'github',
-        icon: <GitHubIcon />,
-        url: 'https://github.com'
-    },
-    {
-        name: 'gmail',
-        icon: <EmailIcon />,
-        url: `mailto:${CONTACT_EMAIL}`
-    },
-    {
-        name: 'facebook',
-        icon: <FacebookIcon />,
-        url: 'https://www.facebook.com'
-    },
-    {
-        name: 'instagram',
-        icon: <InstagramIcon />,
-        url: 'https://www.instagram.com'
-    },
-    {
-        name: 'whatsapp',
-        icon: <WhatsAppIcon />,
-        url: `https://api.whatsapp.com/send?phone=${CONTACT_NUMBER}&text=Hi&lang=en`
-    },
-    {
-        name: 'linkedin',
-        icon: <LinkedInIcon />,
-        url: 'https://www.linkedin.com'
-    },
-    {
-        name: 'twitter',
-        icon: <TwitterIcon />,
-        url: 'https://twitter.com'
-    },
+  {
+    name: 'github',
+    icon: <GitHubIcon />,
+    url: 'https://github.com'
+  },
+  {
+    name: 'gmail',
+    icon: <EmailIcon />,
+    url: `mailto:${CONTACT_EMAIL}`
+  },
+  {
+    name: 'facebook',
+    icon: <FacebookIcon />,
+    url: 'https://www.facebook.com'
+  },
+  {
+    name: 'instagram',
+    icon: <InstagramIcon />,
+    url: 'https://www.instagram.com'
+  },
+  {
+    name: 'whatsapp',
+    icon: <WhatsAppIcon />,
+    url: `https://api.whatsapp.com/send?phone=91${CONTACT_NUMBER}&text=Hi&lang=en`
+  },
+  {
+    name: 'linkedin',
+    icon: <LinkedInIcon />,
+    url: 'https://www.linkedin.com'
+  },
+  {
+    name: 'twitter',
+    icon: <TwitterIcon />,
+    url: 'https://twitter.com'
+  },
 ];
 
 export const menuList = [
-    {
-        name: 'home',
-        label: 'ME',
-        icon: <PersonIcon />,
-        path: appRoutes.home
-    },
-    {
-        name: 'ABOUT',
-        label: 'ABOUT',
-        icon: <DescriptionIcon />,
-        path: appRoutes.about
+  {
+    name: 'home',
+    label: 'ME',
+    icon: <PersonIcon />,
+    path: appRoutes.home
+  },
+  {
+    name: 'ABOUT',
+    label: 'ABOUT',
+    icon: <DescriptionIcon />,
+    path: appRoutes.about
 
-    },
-    {
-        name: 'education',
-        label: 'EDUCATION',
-        icon: <SchoolIcon />,
-        path: appRoutes.education
+  },
+  {
+    name: 'education',
+    label: 'EDUCATION',
+    icon: <SchoolIcon />,
+    path: appRoutes.education
 
-    },
-    {
-        name: 'experiance',
-        label: 'EXPERIANCE',
-        icon: <WorkIcon />,
-        path: appRoutes.experiance
+  },
+  {
+    name: 'experiance',
+    label: 'EXPERIANCE',
+    icon: <WorkIcon />,
+    path: appRoutes.experiance
 
-    },
-    {
-        name: 'contact',
-        label: 'CONTACT',
-        icon: <CallIcon />,
-        path: appRoutes.contact
-    }
+  },
+  {
+    name: 'contact',
+    label: 'CONTACT',
+    icon: <CallIcon />,
+    path: appRoutes.contact
+  }
 ];

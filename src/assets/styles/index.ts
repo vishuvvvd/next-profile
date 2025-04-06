@@ -1,5 +1,5 @@
-import { black, primaryMain, secondaryMain, white } from '../colors';
-
+import { black, grey, primaryMain, secondaryMain, white } from '../colors';
+/* eslint-disable import/no-unused-modules */
 /* eslint-disable @typescript-eslint/naming-convention */
 export const textCenter = {
   textAlign: 'center'
@@ -52,6 +52,7 @@ export const text6 = {
 };
 
 export const header = {
+  zIndex:10,
   height: { xs: '70px', md: '50px' },
   py: 0.2,
   px: 2,
@@ -70,6 +71,7 @@ export const header = {
     '.menu-list-grid': {
       gap: { xs: 3, sm: 6, md: 6 },
       '.menu-list-item': {
+        ...textCenter,
         cursor: 'pointer',
         justifyItems: { xs: 'center', md: 'baseline' },
         display: { xs: 'block', md: 'flex' },
@@ -130,3 +132,103 @@ export const layoutWrapper = {
   maxWidth: { lg:'80%' },
   height:'100%'
 };
+
+export const footerBouncingBlock = {
+  display: { xs: 'none', md: 'block' },
+  px:{ sm: 6, md: 6, lg:0 }
+};
+
+export const coloredBorderedBox = {
+  ...textCenter,
+  position: 'relative',
+  width:  '100%',
+  maxWidth:  '800px',
+  height: { xs:'240px', sm:'200px' },
+  marginTop: '24px',
+  '.motion-background-animation':{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    borderRadius: '15px',
+    border: '4px solid transparent',
+  },
+  '.bordered-box-body':{
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    padding:2,
+    backgroundColor: grey,
+    borderRadius: '15px',
+    display:'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    ...textWhite
+  },
+  '.bordered-box-body-note':{
+    ...text5,
+    ...textBlack,
+    textAlign:'justify'
+  }
+};
+
+export const bouncingBlock = {
+  perspective: '400px',
+  width: '100px',
+  height: '100px',
+  '.cube':{
+    width: '100px',
+    height: '100px',
+    position: 'relative',
+    transformStyle: 'preserve-3d'
+  },
+  '.side': {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '12px',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'white',
+  },
+  '.front': {
+    transform: 'rotateY(0deg) translateZ(50px)',
+    background: 'linear-gradient(45deg, #FF6347, #FF4500, #FFD700)', // Tomato to OrangeRed to Gold
+    color: 'white',
+  },
+  '.right': {
+    transform: 'rotateY(90deg) translateZ(50px)',
+    background: 'linear-gradient(45deg, #8A2BE2, #4B0082, #8B008B)', // BlueViolet to Indigo to DarkMagenta
+    color: 'white',
+  },
+  '.back': {
+    transform: 'rotateY(180deg) translateZ(50px)',
+    background: 'linear-gradient(45deg, #FFD700, #FF1493, #FF6347)', // Gold to DeepPink to Tomato
+    color: 'white',
+  },
+  '.left': {
+    transform: 'rotateY(-90deg) translateZ(50px)',
+    background: 'linear-gradient(45deg, #00BFFF, #1E90FF, #4169E1)', // DeepSkyBlue to DodgerBlue to RoyalBlue
+    color: 'white',
+  },
+  '.top': {
+    transform: 'rotateX(90deg) translateZ(50px)',
+    background: 'linear-gradient(45deg, #32CD32, #228B22, #006400)', // LimeGreen to ForestGreen to DarkGreen
+    color: 'white',
+  },
+  '.bottom': {
+    transform: 'rotateX(-90deg) translateZ(50px)',
+    background: 'linear-gradient(45deg, #F0E68C, #FFD700, #FF8C00)', // Khaki to Gold to DarkOrange
+    color: 'white',
+  },
+};
+
+export const profileContainer = { width: '300px', height: '300px', overflow: 'hidden', borderRadius: '50%' };
+
+export const profile = { justifyItems: 'center', textAlign: '-webkit-center' };
