@@ -27,6 +27,7 @@
     "rules": {
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         "prefer-spread": [
             "off"
         ],
@@ -237,9 +238,9 @@
         {
             "files": [
                 "jest.config.ts"
-            ], // Files to exclude
+            ],
             "rules": {
-                "@typescript-eslint/naming-convention": "off" // Disable naming convention for this file
+                "@typescript-eslint/naming-convention": "off"
             }
         }
     ]
