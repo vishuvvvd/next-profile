@@ -1,0 +1,23 @@
+/* eslint-disable import/no-unused-modules */
+export const goodHabbits = [
+  'Write Clean and Readable Code: Use descriptive variable, function, and class names. Keep your code organized and properly indented.',
+  'Follow Coding Standards: Stick to established coding guidelines and standards for consistency. Use linters and formatters to ensure code quality.',
+  'Version Control with Git: Use version control (e.g., Git) to track changes and collaborate with others. Commit often with meaningful commit messages.',
+  'Write Tests: Write unit tests, integration tests, and end-to-end tests. Use test-driven development (TDD) to ensure your code works as expected.',
+  'Keep Learning: Stay updated with the latest technologies, frameworks, and best practices. Read blogs, attend webinars, or take courses to improve your skills.',
+  'Break Down Problems: Divide complex problems into smaller, manageable chunks. Solve problems incrementally rather than trying to fix everything at once.',
+  'Focus on Performance: Write code that is optimized for performance, especially for critical operations. Use tools like profiling and debugging to identify performance bottlenecks.',
+  'Document Your Code: Write meaningful comments to explain complex logic or decisions in the code. Maintain README files for projects and provide setup instructions.',
+  'Code Review: Participate in code reviews to improve the quality of your code and others’ code. Provide constructive feedback and be open to receiving it.',
+  'Automate Repetitive Tasks: Automate your build and deployment processes (e.g., using CI/CD tools). Use scripts to automate repetitive tasks like testing, linting, or formatting.',
+  'Security Awareness: Prioritize security by validating input and sanitizing data. Use secure authentication methods and encryption.',
+  'Be Organized and Manage Time Well: Plan tasks and break them down into smaller steps. Use tools like task managers, kanban boards, or time trackers.',
+  'Collaborate Effectively: Communicate clearly with team members, especially in remote or distributed teams. Use collaboration tools (e.g., Slack, Jira, Trello) to stay organized.',
+  "Refactor Regularly: Continuously refactor your code to improve its readability, efficiency, and structure. Avoid writing 'spaghetti code' by making incremental improvements.",
+  "Understand the Problem Domain: Take the time to understand the problem you're solving before coding. Talk to stakeholders to ensure you're addressing the right needs.",
+  'Work on Soft Skills: Develop communication, teamwork, and problem-solving skills. Be adaptable and willing to learn new tools, technologies, and approaches.',
+  'Manage Dependencies Carefully: Be cautious when adding external libraries or dependencies. Keep dependencies up-to-date, but always test your code after updates.',
+  'Debugging Skills: Learn how to use debugging tools effectively. Approach bugs methodically: isolate, identify, and fix them.',
+  'Understand User Needs: Focus on building software that solves real problems for users. Consider the user experience (UX) and design while developing.',
+  'Test in Real-World Scenarios: Test your application in a real environment (production, staging) to identify issues that may not appear in development.',
+];

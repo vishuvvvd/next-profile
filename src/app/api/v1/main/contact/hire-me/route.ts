@@ -1,16 +1,11 @@
 import { NextResponse } from 'next/server';
 
-import { me } from '@/assets/data/me';
+import { hireme } from '@/assets/data/hireme';
 import { handleApiError } from '@/lib/errorHandler';
 
 export async function GET() {
   try {
-    // Your logic here (e.g., fetch data from DB)
-    const data = me;
-
-    // You can replace the hardcoded data with a database call here
-    // const data = await fetchDataFromDatabase();
-
+    const data = hireme;
     return NextResponse.json({ data });
   } catch (error) {
     return handleApiError(NextResponse, error); // Handle errors globally

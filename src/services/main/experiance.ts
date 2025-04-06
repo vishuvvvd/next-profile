@@ -1,8 +1,10 @@
+/* eslint-disable import/no-unused-modules */
+
 import { INTERNAL_API } from '@/constants/api';
 import API from '@/helpers/fetch';
 import { RevalidateOption } from '@/types';
 
-export const getUserMeData = async ({
+export const getExperianceData = async ({
   revalidate,
   locale,
 }: RevalidateOption) => {
@@ -10,9 +12,9 @@ export const getUserMeData = async ({
   if (revalidate && revalidate === 'true') {
     options = { ...options, next: { revalidate: 0 } };
   }
-  const { data = {} } = await API(
-    `${INTERNAL_API.ME}?locale=${locale}`,
+  const { data = [] } = await API(
+    `${INTERNAL_API.EXPERIANCE}?locale=${locale}`,
     options
   );
-  return data ?? {};
+  return data ?? [];
 };

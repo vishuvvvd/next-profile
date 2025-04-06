@@ -28,11 +28,11 @@ export interface RequestOptions {
   redirect?: 'manual'
 }
 
-// export type RevalidateOption = {
-//   revalidate?: string | null;
-//   id?: string;
-//   locale?: string;
-// };
+export type RevalidateOption = {
+  revalidate?: string | null;
+  id?: string;
+  locale?: string;
+};
 
 export interface LayoutWrapper {
   children: React.ReactNode;
