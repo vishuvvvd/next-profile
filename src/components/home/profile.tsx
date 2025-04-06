@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { profile, profileContainer } from '@/assets/styles';
 
 import ColoredBorderedBox from '../commmon/colored-borderd-box';
+import { Fallback } from '@/assets/icons';
 
 export default function Profile({ data }: { data: { imageUrl: string, bio: string, } }) {
 
@@ -11,7 +12,7 @@ export default function Profile({ data }: { data: { imageUrl: string, bio: strin
     <Box sx={profile}>
       <div style={profileContainer}>
         <Image
-          src={data.imageUrl}
+          src={data.imageUrl || Fallback.src}
           alt="Responsive Example"
           width={300}
           height={300}
