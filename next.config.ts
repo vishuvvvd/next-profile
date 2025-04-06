@@ -2,6 +2,7 @@ import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   assetPrefix: process.env.ASSET_PRIFIX,
   basePath: process.env.BASE_PATH,
   reactStrictMode: true,

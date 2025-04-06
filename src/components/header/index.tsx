@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { Grid } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
+import * as motion from 'motion/react-client';
 
 import { header } from '@/assets/styles';
 
@@ -17,7 +18,13 @@ function AppHeader() {
           <SiteLogo />
         </Grid>
         <Grid size="grow">
-          <MenuList />
+          <motion.div
+            animate={{ scale: 1.1 }}
+            whileInView={{ opacity: .8 }}
+            layout
+          >
+            <MenuList />
+          </motion.div>
         </Grid>
         <Grid >
           <Profile />

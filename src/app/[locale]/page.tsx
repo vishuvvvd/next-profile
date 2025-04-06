@@ -1,58 +1,13 @@
-import { useTranslations } from 'next-intl';
-
+import Home from '@/components/home';
 import AppLayoutWrapper from '@/components/layout-wrapper';
-import { Link } from '@/i18n/navigation';
+import { getUserMeData } from '@/services/main/me';
 
-export default function HomePage() {
-  const t = useTranslations('HOMEPAGE');
+export default async function HomePage() {
+  const data = await getUserMeData();
+
   return (
     <AppLayoutWrapper>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <h1>{t('TITLE')}</h1>
-      <Link href="/about">{t('ABOUT')}</Link>
+      <Home data={data} />
     </AppLayoutWrapper>
   );
 }
