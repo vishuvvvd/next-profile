@@ -229,6 +229,13 @@ export const bouncingBlock = {
   },
 };
 
-export const profileContainer = { width: '300px', height: '300px', overflow: 'hidden', borderRadius: '50%' };
+export const profileContainer = { 
+  width:'100%',
+  maxWidth: '300px', 
+  maxHeight: '300px', 
+  overflow: 'hidden', 
+  borderRadius: '50%' };
+
+export const nextImage = { width: '300px', height: '300px' };
 
 export const profile = { justifyItems: 'center', textAlign: '-webkit-center' };

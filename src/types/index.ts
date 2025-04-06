@@ -49,3 +49,10 @@ export interface ColoredBorderBox {
   borderGradient?: string;
   sx?: object;
 }
+
+export interface CustomeImageType { 
+  src: string; 
+  alt?: string; 
+  fallback?: string, 
+  sx?: object 
+}

@@ -1,25 +1,15 @@
 import { Box } from '@mui/material';
-import Image from 'next/image';
 
-import { Fallback } from '@/assets/icons';
 import { profile, profileContainer } from '@/assets/styles';
 
 import ColoredBorderedBox from '../commmon/colored-borderd-box';
+import CutomImage from '../commmon/next-image';
 
 export default function Profile({ data }: { data: { imageUrl: string, bio: string, } }) {
 
   return (
     <Box sx={profile}>
-      <div style={profileContainer}>
-        <Image
-          src={data?.imageUrl || Fallback.src}
-          alt="Responsive Example"
-          width={300}
-          height={300}
-          layout="intrinsic"
-          priority={false}
-        />
-      </div>
+      <CutomImage src={data?.imageUrl} alt='Profile Image' sx={profileContainer} />
       <ColoredBorderedBox note={data?.bio} />
     </Box>
   );

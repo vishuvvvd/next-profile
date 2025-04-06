@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   basePath: process.env.BASE_PATH,
   reactStrictMode: true,
   env: {},
+  images: {
+    domains: ["media.licdn.com"], // Add the domain here
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();

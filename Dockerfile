@@ -34,12 +34,25 @@ COPY --from=builder /workdir/package-lock.json .
 COPY --from=builder /workdir/next.config.ts ./
 
 # COPY --from=builder /workdir/public ./public
-COPY --from=builder /workdir/.next/static ./.next/static
 COPY --from=builder /workdir/.next/standalone ./
 RUN mkdir -p ./public/vd
 RUN mkdir -p ./public/vd/_next
+
+COPY --from=builder /workdir/.next/static ./.next/static
 COPY --from=builder /workdir/.next/static ./public/vd/_next/static
+COPY --from=builder /workdir/.next/server ./public/vd/_next/server
 COPY --from=builder /workdir/.next/static ./.next
+
+RUN ls -al /workdir
+RUN ls -al /workdir/.next
+RUN ls -al /workdir/.next/static
+RUN ls -al /workdir/public/vd/_next/server
+
+RUN ls -al /workdir/public
+RUN ls -al /workdir/public/vd
+RUN ls -al /workdir/public/vd/_next
+RUN ls -al /workdir/public/vd/_next/static
+RUN ls -al /workdir/.next/server
 
 CMD ["node", "./server.js"]
 #CMD ["npm", "start"]
