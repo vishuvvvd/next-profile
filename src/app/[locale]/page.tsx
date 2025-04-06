@@ -3,7 +3,7 @@ import AppLayoutWrapper from '@/components/layout-wrapper';
 import { getUserMeData } from '@/services/main/me';
 
 export default async function HomePage() {
-  const data = await getUserMeData();
+  const data = await getUserMeData({ locale: 'en' });
 
   return (
     <AppLayoutWrapper>
