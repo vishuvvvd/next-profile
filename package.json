@@ -18,14 +18,17 @@
     "@mui/material": "^7.0.1",
     "@mui/material-nextjs": "^7.0.0",
     "eslint-plugin-editorconfig": "^4.0.3",
+    "lodash": "^4.17.21",
     "motion": "^12.6.3",
     "next": "15.2.2",
     "next-intl": "^4.0.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "weak-key": "^1.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/lodash": "^4.17.16",
     "@types/node": "^20",
     "@types/parse-json": "^4.0.2",
     "@types/react": "^19",

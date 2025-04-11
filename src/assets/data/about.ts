@@ -7,11 +7,13 @@ export const about = {
       'Prior to joining Happiest Minds, I worked at Ariveguru Technologies Pvt Ltd for 4 years, where I gained valuable experience in building robust applications and developing solutions across various industries. My career journey has provided me with a strong technical foundation and hands-on expertise in creating secure and scalable applications, particularly in the domain of user authentication and login modules.',
     awards: [
       {
+        id:'aw1',
         award: 'Recognition Award',
         company: 'Ariveguru Technologies Pvt Ltd',
         description: 'Awarded for exceptional performance and dedication.',
       },
       {
+        id:'aw2',
         award: 'Superstar Award',
         company: 'Happiest Minds Technologies Pvt Ltd',
         description:
@@ -81,8 +83,6 @@ export const about = {
     overview:
       "Over the years, I've developed a strong passion for building secure, performant, and scalable applications. My experience at Ariveguru Technologies Pvt Ltd gave me the chance to work on various impactful projects, while my current role at Happiest Minds Technologies Pvt Ltd has enabled me to further refine my skills and work on more complex challenges, especially in the areas of authentication systems, security, and cloud-based solutions.",
     learning:
-      'I’m always eager to learn and grow, staying up-to-date with the latest technologies to provide the best solutions for my clients. My goal is to continue building applications that are not only functional but also enhance the user experience through seamless design and cutting-edge technologies.',
-    contact:
-      "If you're interested in collaborating or learning more about my work, feel free to reach out!",
+      'I’m always eager to learn and grow, staying up-to-date with the latest technologies to provide the best solutions for my clients. My goal is to continue building applications that are not only functional but also enhance the user experience through seamless design and cutting-edge technologies.'
   },
 };

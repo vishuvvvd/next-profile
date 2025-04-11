@@ -3,3 +3,4 @@ export const secondaryMain = '#dc004e';
 export const white = '#ffffff';
 export const black = '#000000';
 export const grey = '#eeeeee';
+export const aliceBlue = '#D0E0F0';

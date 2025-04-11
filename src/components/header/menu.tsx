@@ -5,6 +5,7 @@ import { Grid, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import key from 'weak-key';
 
 import { menuList } from '@/constants/header-footer';
 
@@ -21,7 +22,7 @@ function MenuList() {
       <Grid container className='menu-list-grid'>
         {
           menuList.map((data) => <Grid
-            key={data.name}
+            key={key(data)}
             className='menu-list-item'
             onClick={() => handleNavigation(data.path)}>
             {data.icon}

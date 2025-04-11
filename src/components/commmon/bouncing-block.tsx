@@ -4,6 +4,7 @@ import { useRef } from 'react';
 
 import { Box } from '@mui/material';
 import { useAnimationFrame } from 'motion/react';
+import key from 'weak-key';
 
 import { bouncingBlock } from '@/assets/styles';
 import { BouncingBlockType } from '@/types';
@@ -23,9 +24,9 @@ export default function BouncingBlock({ data }: { data: BouncingBlockType[] }) {
     <Box className="container" sx={bouncingBlock}>
       <Box className="cube" ref={ref}>
         {
-          data.map((d, i) => {
+          data.map((d) => {
             const name = `side ${d.side}`;
-            return (<Box key={i} className={name}>
+            return (<Box key={key(d)} className={name}>
               {d.name}
             </Box>);
           })

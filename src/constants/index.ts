@@ -2,6 +2,8 @@ export const DOMAIN_NAME = 'vd.com';
 export const SCREEN_MIN_HEIGHT = '500px';
 export const CONTACT_NUMBER = '8892845589';
 export const CONTACT_EMAIL = 'patilvishu2011@gmail.com';
+export const REVALIDATE = 'revalidate';
+export const XREVALIDATE = 'x-revalidate';
 
 export const fontEndTechnologiesBouncingBlock = [
   {

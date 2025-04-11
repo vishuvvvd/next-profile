@@ -6,7 +6,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PersonIcon from '@mui/icons-material/Person';
-import SchoolIcon from '@mui/icons-material/School';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import WorkIcon from '@mui/icons-material/Work';
@@ -65,13 +64,6 @@ export const menuList = [
     label: 'ABOUT',
     icon: <DescriptionIcon />,
     path: appRoutes.about
-
-  },
-  {
-    name: 'education',
-    label: 'EDUCATION',
-    icon: <SchoolIcon />,
-    path: appRoutes.education
 
   },
   {

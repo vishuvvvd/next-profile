@@ -13,11 +13,11 @@ export const textSecondaryMain = {
   color: secondaryMain
 };
 
-export const textBlack ={
+export const textBlack = {
   color: black
 };
 
-export const textWhite ={
+export const textWhite = {
   color: white
 };
 
@@ -51,8 +51,24 @@ export const text6 = {
   lineHeight: { xs: '1rem', sm: '1.25rem', md: '1.5rem' }
 };
 
+export const sectionHeader = {
+  ...text3,
+  ...textPrimaryMain
+};
+
+export const defaultRadius = {
+  borderRadius: 1
+};
+
+export const skillsList = {
+  width: '100%',
+  height: '100%',
+  bgcolor: 'background.paper',
+  borderRadius: 1
+};
+
 export const header = {
-  zIndex:10,
+  zIndex: 10,
   height: { xs: '70px', md: '50px' },
   py: 0.2,
   px: 2,
@@ -91,34 +107,34 @@ export const header = {
 };
 
 export const footer = {
-  py:{ xs:3, sm:4, md:5 },
-  mb:{ xs:9, sm:8, md: 0 },
-  '.footer-message-one':{
+  py: { xs: 3, sm: 4, md: 5 },
+  mb: { xs: 9, sm: 8, md: 0 },
+  '.footer-message-one': {
     ...textCenter,
     ...text3,
     ...textPrimaryMain,
-    '.code-strong-text':{
+    '.code-strong-text': {
       ...textBlack
     },
-    '.heart-symbol':{
+    '.heart-symbol': {
       ...textSecondaryMain
     }
   },
-  '.footer-message-two':{
+  '.footer-message-two': {
     ...textCenter,
     ...text3,
-    pt:2
+    pt: 2
   },
-  '.social-media-list':{
-    pt:2,
-    justifySelf:'center',
-    textAlign:'center',
-    '.social-media-item':{
-      pt:2,
-      px:1,
-      cursor:'pointer',
+  '.social-media-list': {
+    pt: 2,
+    justifySelf: 'center',
+    textAlign: 'center',
+    '.social-media-item': {
+      pt: 2,
+      px: 1,
+      cursor: 'pointer',
       ...textBlack,
-      svg:{
+      svg: {
         ...text1
       }
     }
@@ -126,26 +142,26 @@ export const footer = {
 };
 
 export const layoutWrapper = {
-  gap:{ xs:1 },
-  px:{ xs:1, sm:2, md:3 },
-  py:{ xs:2, lg:2 },
-  maxWidth: { lg:'80%' },
-  height:'100%'
+  gap: { xs: 1 },
+  px: { xs: 1, sm: 2, md: 3 },
+  py: { xs: 2, lg: 2 },
+  maxWidth: { lg: '80%' },
+  height: '100%'
 };
 
 export const footerBouncingBlock = {
   display: { xs: 'none', md: 'block' },
-  px:{ sm: 6, md: 6, lg:0 }
+  px: { sm: 6, md: 6, lg: 0 }
 };
 
 export const coloredBorderedBox = {
   ...textCenter,
   position: 'relative',
-  width:  '100%',
-  maxWidth:  '800px',
-  height: { xs:'240px', sm:'200px' },
+  width: '100%',
+  maxWidth: '800px',
+  height: { xs: '240px', sm: '200px' },
   marginTop: '24px',
-  '.motion-background-animation':{
+  '.motion-background-animation': {
     position: 'absolute',
     top: 0,
     left: 0,
@@ -154,24 +170,24 @@ export const coloredBorderedBox = {
     borderRadius: '15px',
     border: '4px solid transparent',
   },
-  '.bordered-box-body':{
+  '.bordered-box-body': {
     position: 'absolute',
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
-    padding:2,
+    padding: 2,
     backgroundColor: grey,
     borderRadius: '15px',
-    display:'flex',
+    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     ...textWhite
   },
-  '.bordered-box-body-note':{
+  '.bordered-box-body-note': {
     ...text5,
     ...textBlack,
-    textAlign:'justify'
+    textAlign: 'justify'
   }
 };
 
@@ -179,7 +195,7 @@ export const bouncingBlock = {
   perspective: '400px',
   width: '100px',
   height: '100px',
-  '.cube':{
+  '.cube': {
     width: '100px',
     height: '100px',
     position: 'relative',
@@ -229,12 +245,13 @@ export const bouncingBlock = {
   },
 };
 
-export const profileContainer = { 
-  width:'100%',
-  maxWidth: '300px', 
-  maxHeight: '300px', 
-  overflow: 'hidden', 
-  borderRadius: '50%' };
+export const profileContainer = {
+  width: '100%',
+  maxWidth: '300px',
+  maxHeight: '300px',
+  overflow: 'hidden',
+  borderRadius: '50%'
+};
 
 export const nextImage = { width: '300px', height: '300px' };
 

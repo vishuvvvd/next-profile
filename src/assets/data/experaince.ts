@@ -3,7 +3,7 @@ export const experiance = [
   {
     company: 'AriveGuru Technology Solutions Pvt. Ltd',
     location: 'Bangalore',
-    position: 'UI Developer',
+    position: 'Software Engineer',
     duration: 'January 2019 - April 2023',
     projects: [
       {
@@ -85,7 +85,7 @@ export const experiance = [
   {
     company: 'Happiest Minds Technologies Pvt. Ltd',
     location: '',
-    position: 'UI Developer',
+    position: 'Module Lead',
     duration: 'July 2023 - Present',
     technologiesUsed: ['Next.js', 'MUI', 'Redux Toolkit'],
     projects: [

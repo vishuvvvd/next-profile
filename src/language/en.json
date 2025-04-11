@@ -14,5 +14,11 @@
         "WITH": "with",
         "HEART": "❤",
         "NOTE": "Wanna discuss something? Feel free to ping me!"
+    },
+    "ABOUTPAGE": {
+        "AWARDS": "Awards",
+        "EDUCATION": "Education",
+        "KEY_EXPERIENCE": "Skills",
+        "JOURNEY": "Journey"
     }
 }
