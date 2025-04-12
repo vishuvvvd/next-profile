@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unused-modules */
 /* eslint-disable no-unused-vars */
-import { ChangeEventHandler, ReactNode, ChangeEvent } from 'react';
+import { ChangeEventHandler, ReactNode, ChangeEvent, JSX } from 'react';
 
 type BaseType = {
   type?: string;
