@@ -14,12 +14,3 @@ const nextConfig: NextConfig = {
 
 const withNextIntl = createNextIntlPlugin();
 export default withNextIntl(nextConfig);
-
-// BELOW IS INITIAL SETTING
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
-
-// export default nextConfig;
