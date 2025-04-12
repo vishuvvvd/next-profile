@@ -15,12 +15,26 @@ export const me = {
     wife: 'Deepa Vishal Patil',
     daughter: 'Vaidehi Vishal Patil',
   },
-  addresses: {
-    permanent_address:
-      '#512 Rumewadi cross, Rumewadi, Khanapur, Belgaum -591302',
-    current_address:
-      '#27, Shri Chennakeshava Nilaya, 19th Cross, 7th Main, BTM-2 stage Bangalore, Karnataka 560076',
-  },
+  addresses: [
+    {
+      address:'#512 Rumewadi cross, Rumewadi, Khanapur, Belgaum -591302',
+      current: true,
+      permanent: true,
+      meta: {
+        lat: 15.63112629484955,
+        'long': 74.51175171444615
+      }
+    },
+    {
+      address:'#27, Shri Chennakeshava Nilaya, 19th Cross, 7th Main, BTM-2 stage Bangalore, Karnataka 560076',
+      current: false,
+      permanent: false,
+      meta: {
+        lat: 12.9074543,
+        'long': 77.6055460
+      }
+    }
+  ],
   contact: {
     email: 'vishu.vv.vd@gmail.com',
     mobile: '8892845589',

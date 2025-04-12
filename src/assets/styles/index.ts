@@ -1,6 +1,11 @@
 import { black, grey, primaryMain, secondaryMain, white } from '../colors';
 /* eslint-disable import/no-unused-modules */
 /* eslint-disable @typescript-eslint/naming-convention */
+
+export const fullWidth = {
+  width:'100%'
+};
+
 export const textCenter = {
   textAlign: 'center'
 };
@@ -156,6 +161,7 @@ export const footerBouncingBlock = {
 
 export const coloredBorderedBox = {
   ...textCenter,
+  borderRadius: '15px',
   position: 'relative',
   width: '100%',
   maxWidth: '800px',
@@ -256,3 +262,58 @@ export const profileContainer = {
 export const nextImage = { width: '300px', height: '300px' };
 
 export const profile = { justifyItems: 'center', textAlign: '-webkit-center' };
+
+export const dynamicForm = {
+  '.asterisk': {
+    color: '#000',
+  },
+  '.MuiFormControl-root': {
+    mb: 0.5,
+  },
+  '.MuiFormHelperText-root': {
+    color: '#000',
+    mx: 0,
+  },
+  '.form-submit-button': {
+    mt: 1,
+  },
+};
+
+export const button = {
+  borderRadius: '32px',
+  fontSize: '1rem',
+  fontWeight: 'bold',
+  whiteSpace: 'nowrap',
+  marginLeft: 'auto',
+  textTransform: 'capitalize',
+  px: 3,
+  boxShadow: 'none',
+  '&:hover': {
+    boxShadow: 'none',
+    backgroundColor: '#000'//'darkCerulean',
+  },
+};
+
+export const googleMapConatiner = {
+  borderRadius: 1,
+  border:`1px solid ${white}`,
+  iframe:{
+    border: 'none',
+    borderRadius: 1,
+  }
+};
+
+export const hireMeProfileImage = {
+  width: '100%',
+  maxWidth: '100px',
+  maxHeight: '100px',
+  overflow: 'hidden',
+  borderRadius: '50%'
+};
+
+export const hireMe = {
+  p:2,
+  backgroundColor: white,
+  maxWidth:'600px',
+  justify:'center'
+};

@@ -1,4 +1,7 @@
 {
+    "COMMON": {
+        "SUBMIT": "Submit"
+    },
     "HOMEPAGE": {
         "TITLE": "Hello world!",
         "ABOUT": "Go to the about page"
@@ -20,5 +23,8 @@
         "EDUCATION": "Education",
         "KEY_EXPERIENCE": "Skills",
         "JOURNEY": "Journey"
+    },
+    "CONTACT_PAGE": {
+        "HIRE_ME": "Hire Me"
     }
 }

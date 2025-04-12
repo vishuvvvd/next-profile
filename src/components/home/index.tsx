@@ -8,6 +8,7 @@ import Profile from './profile';
 const Home = async () => {
   const { locale, revalidate } = await getServerLocaleRevalidate();
   const data = await getUserMeData({ revalidate, locale });
+
   return (
     <Grid container>
       <Grid size={12}>

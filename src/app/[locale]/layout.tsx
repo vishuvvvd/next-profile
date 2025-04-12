@@ -3,6 +3,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale, } from 'next-intl';
 
+import { fullWidth } from '@/assets/styles';
 import theme from '@/assets/theme';
 import AppFooter from '@/components/footer';
 import AppHeader from '@/components/header';
@@ -25,8 +26,9 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
   return (
-    <html lang={locale}>
+    <html lang={locale} style={fullWidth}>
       <body style={{ margin: 0 }}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

@@ -18,13 +18,15 @@
     "@mui/material": "^7.0.1",
     "@mui/material-nextjs": "^7.0.0",
     "eslint-plugin-editorconfig": "^4.0.3",
+    "html-react-parser": "^5.2.3",
     "lodash": "^4.17.21",
     "motion": "^12.6.3",
     "next": "15.2.2",
     "next-intl": "^4.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "weak-key": "^1.0.3"
+    "weak-key": "^1.0.3",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
