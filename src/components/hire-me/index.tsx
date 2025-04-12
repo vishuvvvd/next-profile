@@ -12,8 +12,8 @@ import CutomImage from '../commmon/next-image';
 async function HireMe({ profileUrl }: { profileUrl: string }) {
   const t = await getTranslations('CONTACT_PAGE');
 
-  const { locale, revalidate } = await getServerLocaleRevalidate();
-  const { whyHireMe } = await getHireMeData({ locale, revalidate });
+  const { locale, revalidate, hostUrl } = await getServerLocaleRevalidate();
+  const { whyHireMe } = await getHireMeData({ locale, revalidate, hostUrl });
   return (
     <Grid container sx={hireMe} spacing={3}>
       <Grid size={12}>

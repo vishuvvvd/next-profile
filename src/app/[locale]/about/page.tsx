@@ -18,10 +18,11 @@ import { Education, Profile } from '@/types/about';
 
 export default async function AboutPage() {
   const t = await getTranslations('ABOUTPAGE');
-  const { locale, revalidate } = await getServerLocaleRevalidate();
-  const data: Profile = await getAboutMeData({ revalidate, locale });
-  const edu: Education[] = await getEducationData({ revalidate, locale });
+  const { locale, revalidate, hostUrl } = await getServerLocaleRevalidate();
+  const data: Profile = await getAboutMeData({ revalidate, locale, hostUrl });
+  const edu: Education[] = await getEducationData({ revalidate, locale, hostUrl });
   const { aboutMe, journey } = data;
+
   return (
     <AppLayoutWrapper>
       <Grid container className='about-me-container' sx={aboutMeStyle}>

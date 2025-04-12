@@ -32,6 +32,7 @@ export type RevalidateOption = {
   revalidate?: string | null;
   id?: string;
   locale?: string;
+  hostUrl?: string;
 };
 
 export interface LayoutWrapper {

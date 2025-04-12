@@ -7,13 +7,17 @@ import { RevalidateOption } from '@/types';
 export const getEducationData = async ({
   revalidate,
   locale,
+  hostUrl=''
 }: RevalidateOption) => {
   let options = { noAuth: true, next: {} };
   if (revalidate && revalidate === 'true') {
     options = { ...options, next: { revalidate: 0 } };
   }
+  if(hostUrl){
+    hostUrl=hostUrl+'/';
+  }
   const { data = [] } = await API(
-    `${INTERNAL_API.EDUCATION}?locale=${locale}`,
+    `${hostUrl}${INTERNAL_API.EDUCATION}?locale=${locale}`,
     options
   );
   return data ?? [];

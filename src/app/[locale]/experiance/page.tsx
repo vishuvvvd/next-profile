@@ -10,8 +10,8 @@ import { getExperianceData } from '@/services/main/experiance';
 import { Experience } from '@/types/experiance';
 
 export default async function ExperiancePage() {
-  const { locale, revalidate } = await getServerLocaleRevalidate();
-  const data: Experience[] = await getExperianceData({ revalidate, locale });
+  const { locale, revalidate, hostUrl } = await getServerLocaleRevalidate();
+  const data: Experience[] = await getExperianceData({ revalidate, locale, hostUrl });
   return (
     <AppLayoutWrapper>
       {

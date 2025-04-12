@@ -10,8 +10,8 @@ import { getUserMeData } from '@/services/main/me';
 import { Address, Me, Meta } from '@/types/me';
 
 export default async function ContectPage() {
-  const { locale, revalidate } = await getServerLocaleRevalidate();
-  const data: Me = await getUserMeData({ revalidate, locale });
+  const { locale, revalidate, hostUrl } = await getServerLocaleRevalidate();
+  const data: Me = await getUserMeData({ revalidate, locale, hostUrl });
   const { addresses = [], imageUrl = '' } = data;
   const { meta }: Address | { meta: Meta } = addresses.find(d => d.current) || { meta: { lat: 1, 'long': 1 } };
 

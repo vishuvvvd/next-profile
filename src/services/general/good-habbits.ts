@@ -7,13 +7,17 @@ import { RevalidateOption } from '@/types';
 export const getDevelopersGooDHabbit = async ({
   revalidate,
   locale,
+  hostUrl=''
 }: RevalidateOption) => {
   let options = { noAuth: true, next: {} };
   if (revalidate && revalidate === 'true') {
     options = { ...options, next: { revalidate: 0 } };
   }
+  if(hostUrl){
+    hostUrl=hostUrl+'/';
+  }
   const { data = [] } = await API(
-    `${INTERNAL_API.DEV_GOOD_HABBITS}?locale=${locale}`,
+    `${hostUrl}${INTERNAL_API.DEV_GOOD_HABBITS}?locale=${locale}`,
     options
   );
   return data ?? [];

@@ -7,13 +7,17 @@ import { RevalidateOption } from '@/types';
 export const getHireMeData = async ({
   revalidate,
   locale,
+  hostUrl=''
 }: RevalidateOption) => {
   let options = { noAuth: true, next: {} };
   if (revalidate && revalidate === 'true') {
     options = { ...options, next: { revalidate: 0 } };
   }
+  if(hostUrl){
+    hostUrl=hostUrl+'/';
+  }
   const { data = {} } = await API(
-    `${INTERNAL_API.HIRE_ME}?locale=${locale}`,
+    `${hostUrl}${INTERNAL_API.HIRE_ME}?locale=${locale}`,
     options
   );
   return data ?? {};
